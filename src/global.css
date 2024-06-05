@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Karla", sans-serif;
+}
+
+::placeholder {
+  font-size: 15px;
+}
+
+.styleInput {
+  display: block;
+  width: 50%;
+  padding: 7px;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgb(209 213 219);
+  border-radius: 5px;
+  transition: ease-in-out;
+  margin: 0;
+}
+
+.exitPosition {
+  left: 83%;
+  top: 5%;
+  padding: 12px;
+  position: absolute;
+}
+.deletePosition {
+  position: absolute;
+  left: 84%;
+  top: 15%;
+  height: 30px;
+}
+
+@media (max-width: 768px) {
+  .exitPosition {
+    left: 83%;
+    top: 5%;
+  }
+}
+@media (max-width: 414px) {
+  .exitPosition {
+    left: 75%;
+    top: 20%;
+  }
+  .deletePosition {
+    left: 77%;
+    top: 30%;
+  }
+}
+@media (max-width: 360px) {
+  .exitPosition {
+    left: 75%;
+    top: 6%;
+  }
+}

@@ -40,7 +40,7 @@ export default function UserPage() {
       <div className="w-full h-full items-center flex justify-center bg-primaryColor ">
         <div className="w-4/5 h-full flex justify-center items-center flex-col rounded-xl bg-white my-6 ">
           <h1 className="text-3xl font-bold mb-5 p-3 text-center sm:text-xl sm:w-9/12 sm:mb-0">
-           {state.name}!
+           Olá {state.name}!
           </h1>
           <div className="h-8 flex flex-col justify-between">
             <a href="/" className="flex justify-end exitPosition">

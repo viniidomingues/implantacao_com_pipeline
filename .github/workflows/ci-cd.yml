@@ -43,5 +43,12 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: vercel login
+        run: vercel login vinicius4al@gmail.com
+
       - name: Deploy to Vercel
-        run: run: vercel --prod --token dnAFC32nzGHeSFRPyDd0nN2g --org-id team_a0lD2iMbGHWvQuIFnLyRGRnK --project-id prj_vbXEEvMDglT0HPqcQbqNzORHZYG2
+        run: vercel --prod
+        env:
+          VERCEL_TOKEN: dnAFC32nzGHeSFRPyDd0nN2g
+          VERCEL_ORG_ID: team_a0lD2iMbGHWvQuIFnLyRGRnK
+          VERCEL_PROJECT_ID: prj_vbXEEvMDglT0HPqcQbqNzORHZYG2

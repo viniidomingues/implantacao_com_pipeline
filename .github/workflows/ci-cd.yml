@@ -44,8 +44,4 @@ jobs:
         run: npm install
 
       - name: Deploy to Vercel
-        run: vercel --prod
-        env:
-          VERCEL_TOKEN: dnAFC32nzGHeSFRPyDd0nN2g
-          VERCEL_ORG_ID: team_a0lD2iMbGHWvQuIFnLyRGRnK
-          VERCEL_PROJECT_ID: prj_vbXEEvMDglT0HPqcQbqNzORHZYG2
+        run: run: vercel --prod --token dnAFC32nzGHeSFRPyDd0nN2g --org-id team_a0lD2iMbGHWvQuIFnLyRGRnK --project-id prj_vbXEEvMDglT0HPqcQbqNzORHZYG2
